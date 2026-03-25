@@ -1,6 +1,7 @@
 import Section from './Section';
 import { motion } from 'framer-motion';
 import { GraduationCap } from 'lucide-react';
+import { getAssetPath } from '../lib/utils';
 
 export default function About() {
   return (
@@ -73,7 +74,7 @@ export default function About() {
 
         <div className="relative mt-8 md:mt-0 group">
           <div className="aspect-square rounded-2xl overflow-hidden bg-secondary border border-border/50 relative z-10">
-             <img src="/images/tanishq_personal.jpg" alt="Tanishq Varshney" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+             <img src={getAssetPath("/images/tanishq_personal.jpg")} alt="Tanishq Varshney" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
              
              <div className="absolute bottom-6 left-6 right-6 space-y-4">

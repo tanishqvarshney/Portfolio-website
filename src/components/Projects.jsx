@@ -1,6 +1,7 @@
 import Section from './Section';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github } from 'lucide-react';
+import { getAssetPath } from '../lib/utils';
 
 const projects = [
   {
@@ -97,7 +98,7 @@ export default function Projects() {
                 className={`lg:col-span-7 relative overflow-hidden rounded-xl bg-secondary border border-border/50 aspect-video block shadow-lg ${index % 2 !== 0 ? 'lg:order-2' : ''}`}
               >
                 <img 
-                  src={project.image} 
+                  src={getAssetPath(project.image)} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
                 />

@@ -1,5 +1,6 @@
 import Section from './Section';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../lib/utils';
 
 export default function Experience() {
   return (
@@ -24,7 +25,7 @@ export default function Experience() {
               <div className="absolute left-[-5px] md:left-[25%] md:-translate-x-1/2 mt-1.5 w-3 h-3 bg-primary rounded-full ring-4 ring-background" />
               
               <div className="flex items-center gap-4 mb-4">
-                <img src="/images/bidgely_logo.png" alt="Bidgely Logo" className="w-12 h-12 rounded-lg bg-white p-2 shadow-sm object-contain" />
+                <img src={getAssetPath("/images/bidgely_logo.png")} alt="Bidgely Logo" className="w-12 h-12 rounded-lg bg-white p-2 shadow-sm object-contain" />
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Software Engineer</h3>
                   <h4 className="text-lg text-muted-foreground">Bidgely <span className="text-sm">· Bangalore</span></h4>
@@ -66,7 +67,7 @@ export default function Experience() {
               <div className="absolute left-[-5px] md:left-[25%] md:-translate-x-1/2 mt-1.5 w-3 h-3 bg-muted-foreground rounded-full ring-4 ring-background shadow-sm" />
               
               <div className="flex items-center gap-4 mb-6">
-                <img src="/images/sparks_logo.png" alt="The Sparks Foundation Logo" className="w-12 h-12 rounded-lg bg-white p-1 shadow-sm object-contain" />
+                <img src={getAssetPath("/images/sparks_logo.png")} alt="The Sparks Foundation Logo" className="w-12 h-12 rounded-lg bg-white p-1 shadow-sm object-contain" />
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Software Developer Intern</h3>
                   <h4 className="text-lg text-muted-foreground">The Sparks Foundation <span className="text-sm">· Remote</span></h4>
