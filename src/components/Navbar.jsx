@@ -99,6 +99,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+
             <div className="pl-4 border-l border-border/50">
                <ThemeToggle />
             </div>

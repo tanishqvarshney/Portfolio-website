@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 function App() {
+
   return (
     <ThemeProvider>
       <ScrollProgress />
@@ -26,3 +27,4 @@ function App() {
 }
 
 export default App;
+

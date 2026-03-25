@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
+// Prevent browser from restoring scroll position on refresh (causes layout jump)
+history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
