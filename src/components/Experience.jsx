@@ -4,7 +4,7 @@ import { getAssetPath } from '../lib/utils';
 
 export default function Experience() {
   return (
-    <Section id="experience" className="py-24 bg-secondary/30 rounded-3xl my-12 relative overflow-hidden">
+    <Section id="experience" className="py-24 bg-secondary/10 backdrop-blur-sm rounded-3xl my-12 relative overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-16">
           Experience.

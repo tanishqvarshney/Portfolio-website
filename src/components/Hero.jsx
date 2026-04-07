@@ -19,7 +19,7 @@ export default function Hero() {
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] text-foreground mb-6">
           Tanishq Varshney. <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-500 block mt-2 text-4xl md:text-6xl">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-800 to-neutral-500 dark:from-neutral-200 dark:to-neutral-500 block mt-2 text-4xl md:text-6xl">
             Software Engineer <br/> Backend + AI/ML Integration
           </span>
         </h1>
@@ -52,8 +52,6 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Decorative gradient blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
     </Section>
   );
 }

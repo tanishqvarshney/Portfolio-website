@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 import { cn } from '../lib/utils';
 
 const links = [
@@ -62,12 +61,10 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <ThemeToggle />
         </nav>
 
         {/* Mobile controls */}
         <div className="flex items-center gap-4 md:hidden z-50">
-          <ThemeToggle />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-foreground"
@@ -99,10 +96,6 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-
-            <div className="pl-4 border-l border-border/50">
-               <ThemeToggle />
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <footer id="contact" className="w-full bg-background border-t border-border mt-32">
+    <footer id="contact" className="w-full bg-transparent border-t border-border mt-32 relative z-10">
       <Section className="py-24 md:py-32 flex flex-col items-center justify-center text-center">
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
           Let's build something great.

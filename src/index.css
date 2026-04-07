@@ -16,8 +16,8 @@
   --secondary: 240 4.8% 95.9%;
   --secondary-foreground: 240 5.9% 10%;
 
-  --muted: 240 4.8% 95.9%;
-  --muted-foreground: 240 3.8% 46.1%;
+  --muted: 240 4.8% 90%;
+  --muted-foreground: 240 3.8% 35%;
 
   --accent: 240 4.8% 95.9%;
   --accent-foreground: 240 5.9% 10%;
@@ -122,10 +122,26 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    background-image: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20;
+    overflow-x: hidden;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
   }
+
+  .glass-effect {
+    @apply backdrop-blur-md border transition-colors;
+    background-color: var(--glass-bg);
+    border-color: var(--glass-border);
+  }
+}
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --glass-bg: rgba(0, 0, 0, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
