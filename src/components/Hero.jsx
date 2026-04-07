@@ -42,7 +42,7 @@ export default function Hero() {
             <Terminal size={18} /> GitHub Profile
           </a>
           <a
-            href="https://drive.google.com/uc?export=download&id=1z3kwUaM83lyFdhCuSXZizuNQwr6LJ816"
+            href="https://drive.google.com/uc?export=download&id=1SMaHY5FwYlSlzMLryDQdp4anauSeDOPL"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary/60 transition-colors"
