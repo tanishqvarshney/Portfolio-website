@@ -5,6 +5,19 @@ import { getAssetPath } from '../lib/utils';
 
 const projects = [
   {
+    title: "TanCura — Healthcare Intelligence Platform",
+    category: "Healthcare / Fintech",
+    description: "A premium, production-grade Healthcare Intelligence platform that orchestrates complex medical claims, clinical adjudications, and pharmaceutical benefits with FAANG-grade precision.",
+    tech: [".NET 8", "Angular 17", "MS SQL Server", "Redis", "Docker", "MediatR", "RxJS"],
+    image: "/images/tancura.png",
+    github: "https://github.com/tanishqvarshney/TanCura-Patient-Claims-Prescription-Management-System",
+    points: [
+      "Built a high-performance .NET 8 / Angular 17 architecture with distributed caching via Redis achieving <50ms response times.",
+      "Implemented a secure Pharmaceutical Oracle for real-time benefit verification with NDC-level clinical accuracy.",
+      "Designed a cinematic UI featuring advanced glassmorphism design tokens, crystalline borders, and fluid micro-animations."
+    ]
+  },
+  {
     title: "DocuMind — AI-Powered RAG Document QA System",
     category: "AI / Full-Stack",
     description: "Architected and built an end-to-end production-grade RAG system enabling semantic search and natural language Q&A over large document repositories (PDFs, DOCXs, CSVs).",
