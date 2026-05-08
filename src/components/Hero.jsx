@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Terminal, Download } from 'lucide-react';
+import { ArrowRight, Terminal, Download, Code2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import Section from './Section';
 
@@ -40,6 +40,14 @@ export default function Hero() {
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-colors"
           >
             <Terminal size={18} /> GitHub Profile
+          </a>
+          <a
+            href="https://leetcode.com/u/tanishqvarshney9455/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-secondary/60 transition-colors"
+          >
+            <Code2 size={18} /> LeetCode
           </a>
           <a
             href="https://drive.google.com/uc?export=download&id=12Hih8fpr1zxTGrlUTAyDUgLn3zEnMvjn"

@@ -1,5 +1,5 @@
 import Section from './Section';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2 } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -30,6 +30,10 @@ export default function Contact() {
           <a href="https://linkedin.com/in/tanishqvarshney" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2 hover:bg-secondary rounded-full">
             <span className="sr-only">LinkedIn</span>
             <Linkedin size={24} />
+          </a>
+          <a href="https://leetcode.com/u/tanishqvarshney9455/" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2 hover:bg-secondary rounded-full">
+            <span className="sr-only">LeetCode</span>
+            <Code2 size={24} />
           </a>
           <a href="mailto:tanishqvarshney9455@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors p-2 hover:bg-secondary rounded-full">
             <span className="sr-only">Email</span>
